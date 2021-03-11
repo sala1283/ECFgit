@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(210, 213, 216);
+}
+#ajouter {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding:5px 5px 5px 5px;
+}
+
+form {
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+    max-width: 300px;
+    display: none;
+}
+input[type=text], input[type=number] {
+    padding: 10px 100px 10px 5px;
+    margin-bottom: 5%;
+}
+input[type=button] {
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+}
+table {
+    margin: auto;
+    padding: 2%;
+    text-align: left;
+    max-width: 350px;
+}
+
+th,
+td {
+    padding: 10px 100px 10px 5px;
+}
+
+tr:hover {
+    background-color: white;
+}
