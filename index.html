@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Médiatèque</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Liste Des Films</h1>
+        <input id="ajouter" type="button" value="Ajouter" onclick="ShowForm();">
+    </div>
+    <form id="formeAjouter" action="">
+        <label for="titre">Titre:</label>
+        <input type="text" name="titre" id="titre"><br />
+        <label for="année">Année:</label>
+        <input type="number" name="année" id="année"><br />
+        <label for="réalisateur">Réalisateur:</label>
+        <input type="text" name="réalisateur" id="réalisateur"><br />
+        <input id="submit" type="button" value="Soumettre" onclick="AddEntry();">
+        <input id="cancel" type="button" value="Annuler" onclick="HideForm();">
+    </form>
+
+    <label for="">Filtre</label>
+    
+    <select id="filtre">
+        <option value="titre">titre</option>
+        <option value="annee">année</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr class="header">
+                <th>Titre</th>
+                <th>Année</th>
+                <th>Réalisateur</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="filmsList">
+            
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
